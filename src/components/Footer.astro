@@ -1,0 +1,47 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer>
+  <div class="footer-content">
+    <p>© {currentYear} Hermandad. Todos los derechos reservados.</p>
+    <div class="social-links">
+      <a href="#" aria-label="Facebook">📘</a>
+      <a href="#" aria-label="Instagram">📷</a>
+      <a href="#" aria-label="Twitter">🐦</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    background: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    margin-top: auto;
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .social-links a {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  .social-links a:hover {
+    transform: scale(1.2);
+  }
+</style>

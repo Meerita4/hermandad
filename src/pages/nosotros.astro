@@ -1,0 +1,103 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Hermandad - Nosotros">
+  <Header />
+  
+  <main>
+    <section class="about">
+      <h1>Sobre Nosotros</h1>
+      <div class="about-content">
+        <p>
+          Nuestra hermandad tiene una larga historia de servicio a la comunidad, 
+          manteniendo vivas las tradiciones y valores que nos han definido a lo 
+          largo de los años.
+        </p>
+        <p>
+          Fundada hace décadas, nuestra organización se ha dedicado a promover 
+          la unión, la solidaridad y la fe entre todos sus miembros.
+        </p>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <span class="number">100+</span>
+          <span class="label">Años de historia</span>
+        </div>
+        <div class="stat">
+          <span class="number">500+</span>
+          <span class="label">Hermanos</span>
+        </div>
+        <div class="stat">
+          <span class="number">50+</span>
+          <span class="label">Eventos anuales</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  main {
+    min-height: 100vh;
+    padding-top: 100px;
+  }
+
+  .about {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, #e94560, #ff6b6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .about-content {
+    margin-bottom: 4rem;
+  }
+
+  .about-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1.5rem;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+  }
+
+  .stat {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+  }
+
+  .number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e94560;
+    margin-bottom: 0.5rem;
+  }
+
+  .label {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+  }
+</style>

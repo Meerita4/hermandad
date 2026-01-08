@@ -1,0 +1,65 @@
+---
+const navItems = [
+  { name: 'Inicio', href: '/' },
+  { name: 'Nosotros', href: '/nosotros' },
+  { name: 'Contacto', href: '/contacto' },
+];
+---
+
+<header>
+  <nav>
+    <div class="logo">
+      <a href="/">🏛️ Hermandad</a>
+    </div>
+    <ul class="nav-links">
+      {navItems.map((item) => (
+        <li>
+          <a href={item.href}>{item.name}</a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</header>
+
+<style>
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(26, 26, 46, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e94560;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+
+  .nav-links a {
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: #e94560;
+  }
+</style>
