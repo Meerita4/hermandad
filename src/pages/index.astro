@@ -1,127 +1,86 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Hermandad - Inicio">
-  <Header />
-  
+<Layout title="Hermandad - Sitio en construcción">
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Bienvenidos a la Hermandad</h1>
-        <p>Unidos por la fe, la tradición y la comunidad</p>
-        <a href="/nosotros" class="btn">Conoce más</a>
+    <div class="maintenance">
+      <div class="content">
+        <h1>🚧 Sitio en construcción 🚧</h1>
+        <p>Estamos trabajando en el sitio web de la Hermandad.</p>
+        <p>Pronto estará disponible con toda la información.</p>
+        <div class="loading">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
       </div>
-    </section>
-
-    <section class="features">
-      <div class="feature-card">
-        <span class="icon">🙏</span>
-        <h3>Fe</h3>
-        <p>Cultivamos la espiritualidad y la devoción en nuestra comunidad.</p>
-      </div>
-      <div class="feature-card">
-        <span class="icon">🤝</span>
-        <h3>Comunidad</h3>
-        <p>Fomentamos la unión y el apoyo mutuo entre todos los hermanos.</p>
-      </div>
-      <div class="feature-card">
-        <span class="icon">📜</span>
-        <h3>Tradición</h3>
-        <p>Preservamos y transmitimos nuestras costumbres ancestrales.</p>
-      </div>
-    </section>
+    </div>
   </main>
-
-  <Footer />
 </Layout>
 
 <style>
   main {
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
-  }
-
-  .hero {
-    min-height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+  }
+
+  .maintenance {
     text-align: center;
     padding: 2rem;
   }
 
-  .hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    background: linear-gradient(90deg, #e94560, #ff6b6b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  .hero-content p {
-    font-size: 1.25rem;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 2rem;
-  }
-
-  .btn {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background: #e94560;
-    color: white;
-    border-radius: 50px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-  }
-
-  .btn:hover {
-    background: #ff6b6b;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(233, 69, 96, 0.4);
-  }
-
-  .features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    padding: 4rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .feature-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    padding: 2rem;
-    text-align: center;
-    transition: all 0.3s ease;
-  }
-
-  .feature-card:hover {
-    transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.1);
-  }
-
-  .icon {
-    font-size: 3rem;
-    display: block;
-    margin-bottom: 1rem;
-  }
-
-  .feature-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+  .content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
     color: #e94560;
   }
 
-  .feature-card p {
-    color: rgba(255, 255, 255, 0.7);
+  .content p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
     line-height: 1.6;
+  }
+
+  .loading {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 0.5rem;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #e94560;
+    border-radius: 50%;
+    animation: loading 1.5s infinite ease-in-out;
+  }
+
+  .dot:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .dot:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+
+  .dot:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+
+  @keyframes loading {
+    0%, 80%, 100% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    40% {
+      transform: scale(1.3);
+      opacity: 1;
+    }
   }
 </style>
