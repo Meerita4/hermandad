@@ -1,0 +1,162 @@
+---
+import Layout from '../layouts/Layout.astro'
+import escudo from '../images/escudo.png'
+---
+
+<Layout 
+  title="Historia de la Hermandad | Hermandad de Santa Ángela"
+  description="Conoce la historia de la Hermandad Sacramental de Santa Ángela de la Cruz desde su fundación en 2014 en el barrio de la Dehesilla, Sanlúcar de Barrameda."
+  canonical="/hermandad"
+>
+  <main class="hermandad-main">
+    <div class="escudo-container">
+      <img src={escudo.src} alt="Escudo de la Hermandad" class="escudo" />
+    </div>
+    <h1>Historia de la Hermandad</h1>
+    
+    <section class="historia-section">
+      <h2>Origen de la parroquia (2014)</h2>
+      <p>La Parroquia de Santa Ángela de la Cruz y San Antonio Abad fue consagrada el 28 de abril de 2014 en el barrio de la Dehesilla, un entorno con escasa vida parroquial previa.</p>
+    </section>
+
+    <section class="historia-section">
+      <h2>Nacimiento del grupo parroquial</h2>
+      <p>El párroco D. Iván Carrera Orellana impulsa un grupo parroquial para evangelizar el barrio, formado principalmente por miembros de la adoración al Santísimo y colaboradores de Cáritas.</p>
+    </section>
+
+    <section class="historia-section">
+      <h2>Erección como Agrupación Parroquial (23 de noviembre de 2014)</h2>
+      <p>Coincidiendo con la solemnidad de Cristo Rey, se erige oficialmente como Agrupación Parroquial Sacramental del Santísimo Cristo del Amor y Humildad ante Caifás, María Santísima de las Nieves, Santa Ángela de la Cruz y San Antonio Abad.</p>
+    </section>
+
+    <section class="historia-section">
+      <h2>Imágenes titulares</h2>
+      <h3>María Santísima de las Nieves:</h3>
+      <p>Primera imagen bendecida en 2015, obra de Dolores León Peñuelas.</p>
+      <p>Debido a su deterioro, se realiza una nueva imagen por Sebastián Montes Carpio, bendecida el 5 de agosto de 2016.</p>
+      
+      <h3>Santísimo Cristo del Amor y Humildad ante Caifás:</h3>
+      <p>Encargado al imaginero Fernando Aguado Hernández.</p>
+      <p>Bendecido el 24 de noviembre de 2018, tras diversos actos formativos y cultuales.</p>
+    </section>
+
+    <section class="historia-section">
+      <h2>Consolidación y vida parroquial (2017–2019)</h2>
+      <p>Con el párroco D. Manuel Jesús Ortiz Rivas, la agrupación se fortalece en formación, acción caritativa, misión evangelizadora y creación del grupo joven, además de importantes mejoras en las dependencias parroquiales.</p>
+    </section>
+
+    <section class="historia-section">
+      <h2>Primeros cultos externos y Vía Crucis</h2>
+      <p>En 2019, el Cristo realiza su primer Vía Crucis por las calles del barrio, con gran participación vecinal y parroquial.</p>
+    </section>
+
+    <section class="historia-section">
+      <h2>Pandemia y dificultades (2020–2021)</h2>
+      <p>La crisis del COVID-19 paraliza proyectos y salidas procesionales, aunque la agrupación mantiene su labor social y caritativa dentro de lo posible.</p>
+    </section>
+
+    <section class="historia-section">
+      <h2>Reactivación y crecimiento (desde 2021)</h2>
+      <p>Presentación anual del cartel "Ego Sum Lux Mundi".</p>
+      <p>Impulso definitivo al grupo joven y a la participación juvenil.</p>
+      <p>Finalización de los salones parroquiales y nuevas iniciativas pastorales y sociales.</p>
+    </section>
+
+    <section class="historia-section">
+      <h2>Hitos recientes</h2>
+      <p>Primera salida procesional del Cristo en Sábado de Pasión 2022, momento histórico para el barrio de la Dehesilla.</p>
+      <p>Traslados, Vía Crucis, cultos cuaresmales y recuperación del triduo al Santísimo Sacramento.</p>
+      <p>Encargo de las varas de presidencia y firma del contrato para la imagen de Caifás, prevista para la Cuaresma de 2025.</p>
+    </section>
+
+    <section class="historia-section">
+      <h2>Situación actual</h2>
+      <p>La agrupación continúa con formación permanente, intensa acción caritativa, fuerte implicación en el barrio y una identidad propia ligada a su parroquia y a la Dehesilla.</p>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .hermandad-main {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .escudo-container {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .escudo {
+    width: 150px;
+    height: auto;
+  }
+
+  .hermandad-main h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .historia-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .historia-section:last-child {
+    border-bottom: none;
+  }
+
+  .historia-section h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    color: #800020;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .historia-section h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    color: #333;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+  }
+
+  .historia-section p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 0.75rem;
+    text-align: justify;
+  }
+
+  @media (max-width: 768px) {
+    .hermandad-main {
+      padding: 3rem 1.5rem;
+    }
+
+    .hermandad-main h1 {
+      font-size: 2rem;
+    }
+
+    .historia-section h2 {
+      font-size: 1.5rem;
+    }
+
+    .historia-section h3 {
+      font-size: 1.2rem;
+    }
+
+    .historia-section p {
+      font-size: 1rem;
+    }
+  }
+</style>

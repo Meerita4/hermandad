@@ -1,0 +1,142 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Comunicado de la Junta de Gobierno">
+  <main class="noticia-detalle">
+    <a href="/" class="back-link">← Volver al inicio</a>
+    <article>
+      <div class="noticia-header">
+        <div class="noticia-fecha">20 de febrero de 2026</div>
+        <h1>Cabildo General Extraordinario</h1>
+      </div>
+
+      <div class="noticia-imagen">
+        <img src="/src/images/CabildoGeneral.jpeg" alt="Cabildo General">
+      </div>
+
+      <div class="noticia-contenido">
+        <p>La Hermandad Sacramental y Cofradía de Nazarenos del Santísimo Cristo del Amor y Humildad ante Caifás, María Santísima de la Salud y Esperanza, Santa Ángela de la Cruz y San Antonio Abad, por orden del Presidente tras acuerdo en Cabildo de Oficiales, y en cumplimiento de nuestras reglas, convoca a todos los hermanos mayores de 18 años de edad y con más de un año de antigüedad a Cabildo General Extraordinario.</p>
+        
+        <p>Dicho Cabildo se celebrará, Dios mediante, el próximo viernes 20 de febrero en los salones parroquiales de Santa Ángela de la Cruz y San Antonio Abad, a las 20:30 horas en primera convocatoria y a las 21:00 horas en segunda y última convocatoria con el siguiente orden del día:</p>
+
+        <ol>
+          <li>Preces.</li>
+          <li>Propuesta y aprobación, si procede, de la integración en la nómina de Hermandades y Cofradías de la Semana Santa de Sanlúcar de Barrameda para realizar la Estación de Penitencia a la Parroquia Mayor de Nuestra Señora de la O en la jornada del Miércoles Santo a partir del año del Señor de 2027.</li>
+          <li>Propuesta y aprobación, si procede, del hábito penitencial de los hermanos nazarenos y de la indumentaria de los monaguillos, conforme al carácter y espíritu de nuestra corporación.</li>
+          <li>Oración final.</li>
+        </ol>
+
+        <p class="despedida">Sin otro particular, reciba un abrazo en Jesucristo Nuestro Señor</p>
+      </div>
+    </article>
+  </main>
+</Layout>
+
+<style>
+  .noticia-detalle {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .noticia-header {
+    margin-bottom: 2rem;
+  }
+
+  .noticia-imagen {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 2rem;
+  }
+
+  .noticia-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .back-link {
+    display: inline-block;
+    color: #0066cc;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  .back-link:hover {
+    color: #004499;
+  }
+
+  .noticia-fecha {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    color: #333;
+    margin: 2rem 0 1rem;
+    border-bottom: 2px solid #8B0000;
+    padding-bottom: 0.5rem;
+  }
+
+  .noticia-contenido {
+    line-height: 1.8;
+    color: #444;
+    font-size: 1.05rem;
+    text-align: justify;
+  }
+
+  .noticia-contenido p {
+    margin-bottom: 1.5rem;
+  }
+
+  .noticia-contenido ul {
+    margin: 1.5rem 0 1.5rem 2rem;
+    line-height: 2;
+  }
+
+  .noticia-contenido li {
+    margin-bottom: 0.8rem;
+  }
+
+  .saludo {
+    font-style: italic;
+    margin-top: 2rem;
+  }
+
+  .despedida {
+    font-style: italic;
+    margin-top: 2.5rem;
+    text-align: center;
+  }
+
+  .firma {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ddd;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>

@@ -2,85 +2,294 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Hermandad - Sitio en construcción">
+<Layout 
+  title="Hermandad Sacramental de Santa Ángela de la Cruz | Sanlúcar de Barrameda"
+  description="Web oficial de la Hermandad Sacramental del Santísimo Cristo del Amor y Humildad ante Caifás y María Santísima de las Nieves. Parroquia de Santa Ángela, Dehesilla, Sanlúcar de Barrameda."
+  canonical="/"
+>
   <main>
-    <div class="maintenance">
-      <div class="content">
-        <h1>🚧 Sitio en construcción 🚧</h1>
-        <p>Estamos trabajando en el sitio web de la Hermandad.</p>
-        <p>Pronto estará disponible con toda la información.</p>
-        <div class="loading">
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-slide active">
+          <img src="src/images/ayh1.jpeg" alt="Imagen 1">
+        </div>
+        <div class="carousel-slide">
+          <img src="src/images/ayh2.jpeg" alt="Imagen 2">
+        </div>
+        <div class="carousel-slide">
+          <img src="src/images/ayh3.jpeg " alt="Imagen 3">
+        </div>
+        <div class="carousel-slide">
+          <img src="src/images/ayh4.jpeg" alt="Imagen 4">
+        </div>
+        <div class="carousel-slide">
+          <img src="src/images/ayh5.jpeg" alt="Imagen 5">
         </div>
       </div>
+      
+      <div class="carousel-indicators">
+        <span class="indicator active" data-slide="0"></span>
+        <span class="indicator" data-slide="1"></span>
+        <span class="indicator" data-slide="2"></span>
+        <span class="indicator" data-slide="3"></span>
+        <span class="indicator" data-slide="4"></span>
+      </div>
     </div>
+
+    <section class="noticias-section">
+      <h2>Últimas Noticias de la Hermandad</h2>
+      <div class="noticias-grid">
+        <a href="/noticias/decreto-hermandad" class="noticia-card-link">
+          <article class="noticia-card">
+            <div class="noticia-imagen">
+              <img src="src/images/decreto.jpeg" alt="Decreto">
+            </div>
+            <div class="noticia-fecha">23 Noviembre 2025</div>
+            <h3>Decreto de Hermandad</h3>
+            <p>Descripción breve de la noticia. Aquí puedes añadir información sobre los eventos, anuncios o novedades de la hermandad.</p>
+          </article>
+        </a>
+
+        <a href="/noticias/noticia-ejemplo-1" class="noticia-card-link">
+          <article class="noticia-card">
+            <div class="noticia-imagen">
+              <img src="src/images/CabildoGeneral.jpeg" alt="Cabildo General Extraordinario">
+            </div>
+            <div class="noticia-fecha">20 Febrero 2026</div>
+            <h3>Cabildo General Extraordinario</h3>
+            <p>Contenido de ejemplo para otra noticia. Puedes duplicar estas tarjetas para añadir más noticias.</p>
+          </article>
+        </a>
+
+        <a href="/noticias/noticia-ejemplo-2" class="noticia-card-link">
+          <article class="noticia-card">
+            <div class="noticia-imagen">
+              <img src="/src/images/triduo.jpeg" alt="Solemne Triduo">
+            </div>
+            <div class="noticia-fecha">18, 19 y 20 Febrero 2026</div>
+            <h3>Solemne Triduo</h3>
+            <p>Solemne Triduo en honor a nuestros Sagrados Titulares en la Parroquia de Santa Ángela y San Antonio Abad.</p>
+          </article>
+        </a>
+      </div>
+    </section>
   </main>
 </Layout>
 
 <style>
-  main {
-    min-height: 100vh;
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 500px;
+  }
+
+  .carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .carousel-slide.active {
+    opacity: 1;
+  }
+
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
-  }
-
-  .maintenance {
-    text-align: center;
-    padding: 2rem;
-  }
-
-  .content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #e94560;
-  }
-
-  .content p {
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 1rem;
-    line-height: 1.6;
-  }
-
-  .loading {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
     gap: 0.5rem;
+    z-index: 10;
   }
 
-  .dot {
+  .indicator {
     width: 12px;
     height: 12px;
-    background-color: #e94560;
     border-radius: 50%;
-    animation: loading 1.5s infinite ease-in-out;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s;
   }
 
-  .dot:nth-child(1) {
-    animation-delay: 0s;
+  .indicator.active {
+    background-color: white;
   }
 
-  .dot:nth-child(2) {
-    animation-delay: 0.3s;
+  .indicator:hover {
+    background-color: rgba(255, 255, 255, 0.8);
   }
 
-  .dot:nth-child(3) {
-    animation-delay: 0.6s;
+  /* Sección de Noticias */
+  .noticias-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1rem;
   }
 
-  @keyframes loading {
-    0%, 80%, 100% {
-      transform: scale(1);
-      opacity: 0.5;
+  .noticias-section h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #333;
+  }
+
+  .noticias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .noticia-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .noticia-card {
+    background: white;
+    border-radius: 8px;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .noticia-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .noticia-card .noticia-imagen {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .noticia-card .noticia-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .noticia-fecha {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem 1.5rem 0;
+  }
+
+  .noticia-card h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    padding: 0 1.5rem;
+  }
+
+  .noticia-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    padding: 0 1.5rem 1.5rem;
+    flex-grow: 1;
+  }
+
+  .noticia-link {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .noticia-link:hover {
+    color: #004499;
+  }
+
+  @media (max-width: 768px) {
+    .carousel {
+      height: 300px;
     }
-    40% {
-      transform: scale(1.3);
-      opacity: 1;
+
+    .noticias-section h2 {
+      font-size: 2rem;
+    }
+
+    .noticias-grid {
+      grid-template-columns: 1fr;
     }
   }
 </style>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.carousel-slide');
+  const indicators = document.querySelectorAll('.indicator');
+  const totalSlides = slides.length;
+  let autoplayInterval: number;
+
+  function showSlide(index: number) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    indicators.forEach(indicator => indicator.classList.remove('active'));
+    
+    currentSlide = (index + totalSlides) % totalSlides;
+    
+    slides[currentSlide].classList.add('active');
+    indicators[currentSlide].classList.add('active');
+  }
+
+  function nextSlide() {
+    showSlide(currentSlide + 1);
+  }
+
+  function prevSlide() {
+    showSlide(currentSlide - 1);
+  }
+
+  function startAutoplay() {
+    autoplayInterval = setInterval(nextSlide, 3000);
+  }
+
+  function stopAutoplay() {
+    clearInterval(autoplayInterval);
+  }
+
+  // Event listeners
+  indicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+      showSlide(index);
+      stopAutoplay();
+      startAutoplay();
+    });
+  });
+
+  // Start autoplay
+  startAutoplay();
+
+  // Pause on hover
+  const carouselContainer = document.querySelector('.carousel-container');
+  carouselContainer?.addEventListener('mouseenter', stopAutoplay);
+  carouselContainer?.addEventListener('mouseleave', startAutoplay);
+</script>

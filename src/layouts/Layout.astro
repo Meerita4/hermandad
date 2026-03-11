@@ -1,9 +1,23 @@
 ---
 interface Props {
   title: string;
+  description?: string;
+  image?: string;
+  canonical?: string;
 }
 
-const { title } = Astro.props;
+const { 
+  title, 
+  description = "Hermandad Sacramental del Santísimo Cristo del Amor y Humildad ante Caifás, Santa Ángela de la Cruz y San Antonio Abad. Sanlúcar de Barrameda, Cádiz.",
+  image = "/images/escudo.png",
+  canonical
+} = Astro.props;
+
+const siteUrl = "https://www.hermandaddesantaangela.com";
+const fullUrl = canonical ? `${siteUrl}${canonical}` : siteUrl;
+
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
 ---
 
 <!doctype html>
@@ -11,12 +25,72 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Hermandad - Sitio web oficial" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- SEO Básico -->
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content="hermandad, cofradía, Santa Ángela de la Cruz, Sanlúcar de Barrameda, Semana Santa, Cristo del Amor y Humildad, Caifás, María Santísima de las Nieves, San Antonio Abad, Dehesilla, penitencia, Cádiz" />
+    <meta name="author" content="Hermandad Sacramental de Santa Ángela" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={fullUrl} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={fullUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={`${siteUrl}${image}`} />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Hermandad Sacramental de Santa Ángela" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={fullUrl} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${siteUrl}${image}`} />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <meta name="msapplication-TileImage" content="/favicon.png" />
+    <meta name="msapplication-TileColor" content="#8B0000" />
+    <meta name="theme-color" content="#8B0000" />
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ReligiousOrganization",
+      "name": "Hermandad Sacramental del Santísimo Cristo del Amor y Humildad ante Caifás, Santa Ángela de la Cruz y San Antonio Abad",
+      "alternateName": "Hermandad de Santa Ángela",
+      "url": siteUrl,
+      "logo": `${siteUrl}/images/escudo.png`,
+      "description": description,
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sanlúcar de Barrameda",
+        "addressRegion": "Cádiz",
+        "addressCountry": "ES"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Sanlúcar de Barrameda, Cádiz"
+      },
+      "foundingDate": "2014",
+      "sameAs": []
+    })} />
   </head>
   <body>
+    <Header />
     <slot />
+    <Footer />
   </body>
 </html>
 
@@ -32,10 +106,23 @@ const { title } = Astro.props;
     scroll-behavior: smooth;
   }
 
+  html, body {
+    height: 100%;
+  }
+
   body {
     min-height: 100vh;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-    color: #ffffff;
+    background: #ffffff;
+    color: #111111;
+    padding-top: 72px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body > main,
+  body > section,
+  body > div:not(:first-child):not(:last-child) {
+    flex: 1;
   }
 
   a {

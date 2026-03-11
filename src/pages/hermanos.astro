@@ -1,0 +1,217 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout 
+  title="Hazte Hermano | Hermandad de Santa Ángela"
+  description="Únete a la Hermandad Sacramental de Santa Ángela de la Cruz. Descarga el formulario de inscripción y consulta los estatutos de la corporación."
+  canonical="/hermanos"
+>
+  <main class="hermanos-page">
+    <h1>Hermanos</h1>
+    
+    <!-- Sección: Hacerse Hermano -->
+    <section class="section-card">
+      <h2> Hazte Hermano.Rellena el formulario</h2>
+      <p>Si deseas formar parte de nuestra Hermandad Sacramental de Santa Ángela, te invitamos a unirte a nuestra familia cofrade.</p>
+      
+      <div class="info-box">
+        <h3>Requisitos para ser hermano</h3>
+        <ul>
+          <li>Estar bautizado</li>
+          <li>Cumplimentar la solicitud de inscripción</li>
+          <li>Abonar la cuota de inscripción</li>
+        </ul>
+      </div>
+      
+      <div class="info-box">
+        <h3>¿Cómo inscribirse?</h3>
+        <p>Puedes realizar tu solicitud de las siguientes formas:</p>
+        <ul>
+          <li><strong>Presencialmente:</strong> En nuestra secretaría</li>
+          <li><strong>Descargando el formulario:</strong> Completa y entrégalo en la secretaría</li>
+        </ul>
+      </div>
+      
+      <div class="buttons-container">
+        <a href="/ficha-inscripcion.pdf" download class="btn btn-secondary"> Descargar formulario</a>
+      </div>
+    </section>
+    
+    <!-- Secciones: Estatutos y Secretaría -->
+    <div class="two-columns">
+      <!-- Sección: Estatutos -->
+      <section class="section-card">
+        <h2>Estatutos de la Hermandad</h2>
+        <p>Consulta las normas y estatutos que rigen nuestra hermandad.</p>
+        
+        <div class="pdf-container">
+          <iframe src="/estatutos.pdf" title="Estatutos de la Hermandad"></iframe>
+        </div>
+      </section>
+
+      <!-- Sección: Secretaría -->
+      <section class="section-card">
+        <h2>Secretaría</h2>
+        <p>Contacta con la secretaría de la hermandad para cualquier gestión o consulta.</p>
+        
+        <div class="info-box">
+          <h3>Horario de atención</h3>
+          <ul>
+            <li><strong>Jueves:</strong> 20:00 - 21:00</li>
+          </ul>
+        </div>
+        
+        <div class="info-box">
+          <h3>Contacto</h3>
+          <ul>
+            <li><strong>Email:</strong> cristoamoryhumildad@gmail.com</li>
+          </ul>
+        </div>
+        
+        <div class="info-box">
+          <h3>Ubicación</h3>
+          <p>Salones Parroquiales de la Parroquia de Santa Ángela de la Cruz<br>
+          Av. de Madrid<br>
+          Sanlúcar de Barrameda</p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .hermanos-page {
+    padding: 4rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .hermanos-page h1 {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #8B0000;
+  }
+
+  .section-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #8B0000;
+  }
+
+  .section-card h2 {
+    font-family: 'Cinzel', serif;
+    color: #8B0000;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+
+  .two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .two-columns .section-card {
+    margin-bottom: 0;
+  }
+
+  .section-card h3 {
+    font-family: 'Cinzel', serif;
+    color: #333;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .info-box {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin: 1rem 0;
+  }
+
+  .info-box h3 {
+    font-family: 'Cinzel', serif;
+    margin-top: 0;
+    color: #8B0000;
+  }
+
+  .info-box ul {
+    margin: 0.5rem 0 0 1.25rem;
+    padding: 0;
+  }
+
+  .info-box li {
+    margin-bottom: 0.5rem;
+  }
+
+  .buttons-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+
+  .btn-primary {
+    background-color: #8B0000;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: #5c0000;
+  }
+
+  .btn-secondary {
+    background-color: #444;
+    color: white;
+  }
+
+  .btn-secondary:hover {
+    background-color: #222;
+  }
+
+  .pdf-container {
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .pdf-container iframe {
+    width: 100%;
+    height: 50vh;
+    border: none;
+  }
+
+  @media (max-width: 768px) {
+    .buttons-container {
+      flex-direction: column;
+    }
+    
+    .btn {
+      text-align: center;
+    }
+
+    .two-columns {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

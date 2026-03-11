@@ -1,0 +1,11 @@
+# Robots.txt - Hermandad Sacramental de Santa Ángela
+# https://www.hermandaddesantaangela.com/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.hermandaddesantaangela.com/sitemap.xml
+
+# Bloquear archivos innecesarios
+Disallow: /*.pdf$

@@ -1,0 +1,96 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Más información">
+  <main class="noticia-detalle">
+    <a href="/" class="back-link">← Volver al inicio</a>
+    <article>
+      <div class="noticia-header">
+        <div class="noticia-fecha">18,19 y 20 de  Febrero 2026</div>
+        <h1>SOLEMNE TRIDUO EN HONOR A NUESTROS SAGRADOS TITULARES</h1>
+      </div>
+      <div class="noticia-imagen">
+        <img src="/src/images/triduo.jpeg" alt="Solemne Triduo">
+      </div>
+
+      <div class="noticia-contenido">
+        <p>Nuestra Hermandad celebra y consagra el Solemne Triduo en honor a nuestros Sagrados Titulares, los días 18, 19 y 20 de Febrero a las 18:40 horas en la Parroquia de Santa Ángela y San Antonio Abad comenzando con el rezo del Santo Rosario, Ejercicio del Triduo y Santa Misa.</p>
+        
+        <p>La predicación estará a cargo del Rvdo. Sr. D. Marco Antonio Romero Temblador, director espiritual de la Hermandad y Párroco de Santa Ángela de la Cruz y San Antonio Abad.</p>
+
+        <p>El día 21 de Febrero a las 19:00 horas, tendrá lugar la Función Principal de Instituto, presidida por el Rvdo. Sr. D. Marco Antonio Romero Temblador.</p>
+
+        <p>La parte musical estará a cargo de D. Justo Jiménez y Dña. Inmaculada Salmoral, piano y soprano.</p>
+
+        <p class="recordatorio"><strong>Recordamos a los hermanos el deber de asistir a estos cultos de reglas y portar la medalla de la Hermandad durante la celebración de los mismos.</strong></p>
+      </div>
+    </article>
+  </main>
+</Layout>
+
+<style>
+  .noticia-detalle {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .noticia-header {
+    margin-bottom: 2rem;
+  }
+
+  .back-link {
+    display: inline-block;
+    color: #0066cc;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  .back-link:hover {
+    color: #004499;
+  }
+
+  .noticia-fecha {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .noticia-imagen {
+    max-width: 400px;
+    margin: 0 auto 2rem;
+  }
+
+  .noticia-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  .noticia-contenido {
+    line-height: 1.8;
+    color: #444;
+    font-size: 1.05rem;
+    text-align: justify;
+  }
+
+  .noticia-contenido p {
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+</style>

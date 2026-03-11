@@ -1,0 +1,168 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout 
+  title="Enseres | Hermandad de Santa Ángela"
+  description="Enseres y patrimonio de la Hermandad Sacramental de Santa Ángela de la Cruz. Pasos, insignias y elementos procesionales."
+  canonical="/enseres"
+>
+  <main class="enseres-main">
+    <h1>Enseres</h1>
+    <p class="intro">Conoce el patrimonio y los enseres de nuestra Hermandad.</p>
+
+    <!-- Sección: Caifás -->
+    <section class="enseres-card">
+      <div class="enseres-content">
+        <div class="enseres-image">
+          <img src="/src/images/caifas.jpeg" alt="Imagen de Caifás" />
+        </div>
+        <div class="enseres-text">
+          <h2>Imagen del Sumo Sacerdote Caifás</h2>
+          <p>La talla artística representa al Sumo Sacerdote Caifás con una imponente presencia y gran fuerza expresiva, concebida por el escultor D. Fernando José Aguado Hernández y realizada en madera de cedro con una altura de 185 cm, destacando por el detallado estudio anatómico del rostro, la intensidad de la mirada y la cuidada policromía que realza cada rasgo y pliegue, mientras que el diseño y la ejecución del ropaje, obra de D. Alberto Prats, aportan majestuosidad y riqueza visual a la composición mediante tejidos y bordados de gran calidad, completándose el conjunto con la delicada orfebrería de mano realizada por D. Alejandro Escobar, que enriquece la pieza con suntuosidad y rigor histórico, configurando una obra de gran realismo y solemnidad.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Potencias -->
+    <section class="enseres-card">
+      <div class="enseres-content reverse">
+        <div class="enseres-image">
+          <img src="/src/images/potencias.jpeg" alt="Potencias doradas" />
+        </div>
+        <div class="enseres-text">
+          <h2>Potencias</h2>
+          <p>Juegos de potencias cinceladas a mano sobre plata de ley de 999 milésimas y chapadas en oro de ley de 3 µm., según el diseño original de D. Fernando Aguado.</p>
+          <p>Realizadas a varias alturas con rayos sueltos y calada, ornamentada en estilo barroco, en su galleta central, destacando en esta, cartela que porta JHS. El resplandor combina rayos exentos y ornamentación.</p>
+          <p>Lleva engastada, tres juegos de circonitas y rubíes en el JHS y tres rubíes centrales. Las potencias miden 22 cm de altura sin los cajillos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Varas -->
+    <section class="enseres-card">
+      <div class="enseres-content">
+        <div class="enseres-image">
+          <img src="/src/images/varas.jpeg" alt="Varas de mando" />
+        </div>
+        <div class="enseres-text">
+          <h2>Varas Corporativas</h2>
+          <p>Con la intención de crear una línea estética para el cortejo de esta corporación, se ha materializado el siguiente diseño de vara corporativa. Aunque la estructura y los elementos que la componen son los clásicos utilizados en este tipo de piezas, a simple vista podemos observar que el tratamiento que recibe cada uno de ellos es totalmente único y personal.</p>
+          <p>La vara está compuesta por la galleta principal, que representa el propio escudo de la corporación. El pelícano, símbolo del amor, recoge entre sus alas todos los elementos heráldicos del propio escudo.</p>
+          <p>Sustenta la galleta un sistema de perfil arquitectónico muy barroco, compuesto por una pieza de perfil sinuoso de cuatro aristas. En el seno de cada cara de dicha estructura encontramos el símbolo de la Fuente, haciendo alusión a la advocación Mariana de la cofradía (Salud y Esperanza).</p>
+          <p>En la parte inferior encontramos el propio fuste de la vara, compuesto por cañones hexagonales. Con la materialización de este diseño, la corporación pretende aportar al lenguaje estético que conforma la Semana Santa de Sanlúcar, aires frescos e innovadores propios de las nuevas corporaciones que emergen para aportar al conjunto de cofradías de dicha Semana Mayor.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .enseres-main {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .enseres-main h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #8B0000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .enseres-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #8B0000;
+  }
+
+  .enseres-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .enseres-content.reverse {
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .enseres-content.reverse .enseres-image {
+    order: 2;
+  }
+
+  .enseres-content.reverse .enseres-text {
+    order: 1;
+  }
+
+  .enseres-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .enseres-text h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.4rem;
+    color: #8B0000;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.75rem;
+  }
+
+  .enseres-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+
+  .enseres-text p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    .enseres-main {
+      padding: 2rem 1rem;
+    }
+
+    .enseres-main h1 {
+      font-size: 2rem;
+    }
+
+    .enseres-card {
+      padding: 1.5rem;
+    }
+
+    .enseres-content,
+    .enseres-content.reverse {
+      grid-template-columns: 1fr;
+    }
+
+    .enseres-content.reverse .enseres-image,
+    .enseres-content.reverse .enseres-text {
+      order: unset;
+    }
+
+    .enseres-text h2 {
+      font-size: 1.2rem;
+    }
+  }
+</style>

@@ -1,0 +1,140 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout 
+  title="Titulares | Cristo del Amor y Humildad y Santa Ángela de la Cruz"
+  description="Imágenes titulares de la Hermandad: Santísimo Cristo del Amor y Humildad ante Caifás, obra de Fernando Aguado, y Santa Ángela de la Cruz."
+  canonical="/titulares"
+>
+  <main class="titulares-main">
+    <!-- Primera sección -->
+    <section class="titular-section">
+      <div class="titular-header">
+        <h2>Santísimo Cristo</h2>
+        <h3>del Amor y Humildad Ante Caifás</h3>
+      </div>
+      <div class="titular-body">
+        <div class="titular-text">
+          <p>La imagen del Señor del Amor y Humildad es obra del escultor-imaginero sevillano, don Fernando José Aguado Hernández.</p>
+          <p>El Sábado, 18 de Abril de 2015, una fecha que quedará marcada en la historia de nuestra Agrupación, se realizó la firma y el acuerdo por ambas partes, de la realización de nuestro amantísimo titular.</p>
+          <p>Bendecido el 23 de Noviembre del 2018 "Festividad de Cristo Rey del Universo" en nuestra Parroquia de Santa Ángela por nuestro párroco el Rvdo. Padre D. Manuel Jesús Ortiz Rivas.</p>
+        </div>
+        <div class="titular-image">
+          <img src="/src/images/cristoAmoryHumildad.jpeg" alt="Cristo del Amor y Humildad">
+        </div>
+      </div>
+    </section>
+
+    <!-- Segunda sección -->
+    <section class="titular-section">
+      <div class="titular-header">
+        <h2>Santa Ángela</h2>
+        <h3>de la cruz</h3>
+      </div>
+      <div class="titular-body">
+        <div class="titular-image">
+          <img src="/src/images/santaangeladelacruz.jpg" alt="Santa Ángela de la cruz">
+        </div>
+        <div class="titular-text">
+          <p>María de los Ángeles Guerrero González, fue una religiosa católica española fundadora de la congregación "Hermanitas de la Cruz" dedicada ayudar a los pobres y a los enfermos. Fue canonizada por Juan Pablo II el 4 de mayo del 2003 como Santa Ángela de la Cruz.</p>
+          <p>Bendecida el 1 de Noviembre de 2015, solemnidad de Todos los Santos.</p>
+          <p>Imagen de vestir, con un tamaño natural de 1'60 m, tallada por el escultor bornense Ismael Rodríguez-Viciana Buzón.</p>
+        </div>
+      </div>
+    </section>
+
+   
+  </main>
+</Layout>
+
+<style>
+  .titulares-main {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .titular-section {
+    margin-bottom: 2rem;
+  }
+
+  .titular-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .titular-header h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .titular-header h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #800020;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .titular-body {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+
+  .titular-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .titular-text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+  }
+
+  .titular-image {
+    flex: 1;
+    max-width: 350px;
+  }
+
+  .titular-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .titular-body {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .titular-image {
+      max-width: 100%;
+    }
+
+    .titular-header h2 {
+      font-size: 1.8rem;
+    }
+
+    .titular-header h3 {
+      font-size: 1.5rem;
+    }
+
+    .titular-text p {
+      font-size: 1rem;
+    }
+  }
+</style>

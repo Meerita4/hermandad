@@ -1,0 +1,182 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Decreto de Erección Canónica de la Hermandad">
+  <main class="noticia-detalle">
+    <a href="/" class="back-link">← Volver al inicio</a>
+    <article>
+      <div class="noticia-header">
+        <div class="noticia-fecha">23 de noviembre de 2025</div>
+        <h1>Elevación a Hermandad de Penitencia</h1>
+      </div>
+
+      <div class="noticia-contenido">
+        <p class="introduccion">
+          La Junta de Gobierno tiene el honor de presentar ante todos los hermanos y devotos el 
+          <strong>Decreto de Erección Canónica</strong> mediante el cual nuestra Hermandad ha sido 
+          constituida oficialmente como entidad canónica en el seno de la Santa Madre Iglesia.
+        </p>
+
+        <div class="decreto-container">
+          <img src="/src/images/decreto.jpeg" alt="Decreto de Erección Canónica" class="imagen-principal" />
+          <p class="pie-imagen">Decreto oficial de erección canónica de la Hermandad</p>
+        </div>
+        
+        <h2>Significado del Decreto</h2>
+        <p>
+          El Decreto de Erección Canónica constituye el acto jurídico por el cual la autoridad eclesiástica 
+          competente reconoce y aprueba la constitución de nuestra Hermandad, otorgándole personalidad 
+          jurídica canónica y permitiendo su plena actividad dentro de la Iglesia Católica.
+        </p>
+
+        <h2>Contenido del Documento</h2>
+        <p>Este histórico documento contiene:</p>
+        
+        <ul>
+          <li><strong>Aprobación eclesiástica:</strong> Reconocimiento oficial por parte de la autoridad diocesana</li>
+          <li><strong>Denominación canónica:</strong> Nombre completo y oficial de la Hermandad</li>
+          <li><strong>Sede canónica:</strong> Templo donde la Hermandad tiene establecida su sede</li>
+          <li><strong>Fines y objetivos:</strong> Propósitos religiosos, culturales y sociales de la corporación</li>
+          <li><strong>Estatutos aprobados:</strong> Normas que rigen la vida y organización de la Hermandad</li>
+        </ul>
+
+        <h2>Importancia para la Hermandad</h2>
+        <p>
+          Este decreto representa un hito fundamental en la historia de nuestra corporación, pues mediante 
+          él quedamos plenamente integrados en la estructura pastoral de la Diócesis, pudiendo desarrollar 
+          nuestra labor evangelizadora, cultual y caritativa con el respaldo y bendición de la Santa Iglesia.
+        </p>
+
+        <p class="conclusion">
+          Damos gracias a Dios Nuestro Señor y a Nuestros Sagrados Titulares por este don recibido, 
+          comprometiéndonos a vivir con fidelidad el espíritu cristiano y las normas que nos rigen.
+        </p>
+
+        <p class="firma">
+          <strong>La Junta de Gobierno</strong><br>
+          Hermandad de Santa Ángela de la Cruz
+        </p>
+      </div>
+    </article>
+  </main>
+</Layout>
+
+<style>
+  .noticia-detalle {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .noticia-header {
+    margin-bottom: 2rem;
+  }
+
+  .back-link {
+    display: inline-block;
+    color: #0066cc;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  .back-link:hover {
+    color: #004499;
+  }
+
+  .noticia-fecha {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    color: #333;
+    margin: 2.5rem 0 1rem;
+    border-bottom: 2px solid #8B0000;
+    padding-bottom: 0.5rem;
+  }
+
+  .noticia-contenido {
+    line-height: 1.8;
+    color: #444;
+    font-size: 1.05rem;
+    text-align: justify;
+  }
+
+  .introduccion {
+    font-size: 1.15rem;
+    font-style: italic;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-left: 4px solid #8B0000;
+    margin: 2rem 0;
+  }
+
+  .decreto-container {
+    margin: 3rem 0;
+    text-align: center;
+  }
+
+  .imagen-principal {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ddd;
+  }
+
+  .pie-imagen {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 1rem;
+  }
+
+  .noticia-contenido p {
+    margin-bottom: 1.5rem;
+  }
+
+  .noticia-contenido ul {
+    margin: 1.5rem 0 2rem 2rem;
+    line-height: 2;
+  }
+
+  .noticia-contenido li {
+    margin-bottom: 0.8rem;
+  }
+
+  .conclusion {
+    font-style: italic;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-left: 4px solid #8B0000;
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .firma {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ddd;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+</style>
