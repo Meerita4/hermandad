@@ -202,6 +202,10 @@ import Layout from '../layouts/Layout.astro'
   }
 
   @media (max-width: 768px) {
+    .hermanos-page {
+      padding: 2rem 1rem;
+    }
+
     .buttons-container {
       flex-direction: column;
     }
@@ -212,6 +216,46 @@ import Layout from '../layouts/Layout.astro'
 
     .two-columns {
       grid-template-columns: 1fr;
+    }
+
+    .section-card {
+      padding: 1.5rem;
+    }
+
+    .section-card h2 {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hermanos-page {
+      padding: 1.5rem 0.75rem;
+    }
+
+    .hermanos-page h1 {
+      font-size: 1.8rem;
+    }
+
+    .section-card {
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .section-card h2 {
+      font-size: 1.1rem;
+    }
+
+    .info-box {
+      padding: 1rem;
+    }
+
+    .pdf-container iframe {
+      height: 40vh;
+    }
+
+    .btn {
+      padding: 0.65rem 1rem;
+      font-size: 0.9rem;
     }
   }
 </style>

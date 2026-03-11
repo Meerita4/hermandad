@@ -116,9 +116,13 @@ import Layout from '../layouts/Layout.astro'
   }
 
   @media (max-width: 768px) {
+    .titulares-main {
+      padding: 1.5rem 1rem;
+    }
+
     .titular-body {
       flex-direction: column;
-      gap: 2rem;
+      gap: 1.5rem;
     }
 
     .titular-image {
@@ -126,15 +130,47 @@ import Layout from '../layouts/Layout.astro'
     }
 
     .titular-header h2 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
 
     .titular-header h3 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
 
     .titular-text p {
       font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .titulares-main {
+      padding: 1rem 0.75rem;
+    }
+
+    .titular-header {
+      margin-bottom: 1.5rem;
+    }
+
+    .titular-header h2 {
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+    }
+
+    .titular-header h3 {
+      font-size: 1.1rem;
+    }
+
+    .titular-body {
+      gap: 1rem;
+    }
+
+    .titular-text {
+      gap: 0.8rem;
+    }
+
+    .titular-text p {
+      font-size: 0.95rem;
+      line-height: 1.7;
     }
   }
 </style>

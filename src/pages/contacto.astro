@@ -148,6 +148,47 @@ import Footer from '../components/Footer.astro';
     font-size: 1.5rem;
   }
 
+  @media (max-width: 768px) {
+    main {
+      padding-top: 80px;
+    }
+
+    .contact {
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .contact-form {
+      padding: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    main {
+      padding-top: 70px;
+    }
+
+    .contact {
+      padding: 1.5rem 0.75rem;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    .contact-form {
+      padding: 1rem;
+      border-radius: 12px;
+    }
+
+    .btn {
+      padding: 0.875rem;
+    }
+  }
+
   .info-item p {
     color: #555;
   }

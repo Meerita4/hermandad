@@ -144,7 +144,12 @@ import Layout from '../layouts/Layout.astro'
     }
 
     .enseres-main h1 {
-      font-size: 2rem;
+      font-size: 1.8rem;
+    }
+
+    .intro {
+      font-size: 1rem;
+      margin-bottom: 2rem;
     }
 
     .enseres-card {
@@ -163,6 +168,44 @@ import Layout from '../layouts/Layout.astro'
 
     .enseres-text h2 {
       font-size: 1.2rem;
+    }
+
+    .enseres-text p {
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .enseres-main {
+      padding: 1.5rem 0.75rem;
+    }
+
+    .enseres-main h1 {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+
+    .intro {
+      font-size: 0.95rem;
+    }
+
+    .enseres-card {
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .enseres-content {
+      gap: 1rem;
+    }
+
+    .enseres-text h2 {
+      font-size: 1.1rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .enseres-text p {
+      font-size: 0.9rem;
+      line-height: 1.7;
     }
   }
 </style>

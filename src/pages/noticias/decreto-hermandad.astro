@@ -176,7 +176,48 @@ import Layout from '../../layouts/Layout.astro';
 
   @media (max-width: 768px) {
     h1 {
-      font-size: 2rem;
+      font-size: 1.8rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    .noticia-contenido {
+      font-size: 1rem;
+    }
+
+    .introduccion {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    .noticia-contenido ul {
+      margin-left: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .noticia-detalle {
+      padding: 0 0.75rem;
+      margin: 1rem auto;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin: 1.5rem 0 0.75rem;
+    }
+
+    .noticia-contenido {
+      font-size: 0.95rem;
+    }
+
+    .conclusion {
+      padding: 1rem;
     }
   }
 </style>

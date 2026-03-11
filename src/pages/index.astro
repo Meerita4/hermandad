@@ -230,15 +230,64 @@ import Layout from '../layouts/Layout.astro';
 
   @media (max-width: 768px) {
     .carousel {
-      height: 300px;
+      height: 280px;
+    }
+
+    .noticias-section {
+      margin: 2rem auto;
+      padding: 0 0.75rem;
     }
 
     .noticias-section h2 {
-      font-size: 2rem;
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
     }
 
     .noticias-grid {
       grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .noticia-card h3 {
+      font-size: 1.2rem;
+    }
+
+    .noticia-card .noticia-imagen {
+      height: 180px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .carousel {
+      height: 220px;
+    }
+
+    .carousel-indicators {
+      bottom: 0.5rem;
+    }
+
+    .indicator {
+      width: 8px;
+      height: 8px;
+    }
+
+    .noticias-section h2 {
+      font-size: 1.4rem;
+    }
+
+    .noticia-fecha {
+      font-size: 0.8rem;
+      padding: 0.75rem 1rem 0;
+    }
+
+    .noticia-card h3 {
+      font-size: 1.1rem;
+      padding: 0 1rem;
+    }
+
+    .noticia-card p {
+      font-size: 0.9rem;
+      padding: 0 1rem 1rem;
     }
   }
 </style>

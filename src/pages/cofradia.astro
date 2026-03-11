@@ -87,19 +87,45 @@ import Layout from '../layouts/Layout.astro'
 
   @media (max-width: 768px) {
     .cofradia-main {
-      padding: 3rem 1.5rem;
+      padding: 2rem 1rem;
     }
 
     .cofradia-main h1 {
-      font-size: 2rem;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
     }
 
     .cofradia-section h2 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
 
     .cofradia-section p {
       font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .cofradia-main {
+      padding: 1.5rem 0.75rem;
+    }
+
+    .cofradia-main h1 {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+
+    .cofradia-section {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .cofradia-section h2 {
+      font-size: 1.2rem;
+    }
+
+    .cofradia-section p {
+      font-size: 0.95rem;
+      line-height: 1.7;
     }
   }
 </style>

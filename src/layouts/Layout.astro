@@ -119,6 +119,18 @@ import Footer from '../components/Footer.astro'
     flex-direction: column;
   }
 
+  @media (max-width: 768px) {
+    body {
+      padding-top: 64px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      padding-top: 56px;
+    }
+  }
+
   body > main,
   body > section,
   body > div:not(:first-child):not(:last-child) {
