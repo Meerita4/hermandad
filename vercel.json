@@ -1,5 +1,0 @@
-{
-  "buildCommand": "npx astro build",
-  "outputDirectory": "dist",
-  "installCommand": "npm install"
-}
