@@ -2,28 +2,34 @@
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="Más información">
+<Layout title="Solemne Triduo en Honor a Nuestros Sagrados Titulares | Hermandad de Santa Ángela">
   <main class="noticia-detalle">
     <a href="/" class="back-link">← Volver al inicio</a>
     <article>
       <div class="noticia-header">
-        <div class="noticia-fecha">18,19 y 20 de  Febrero 2026</div>
-        <h1>SOLEMNE TRIDUO EN HONOR A NUESTROS SAGRADOS TITULARES</h1>
+        <h1>Solemne Triduo en Honor a Nuestros Sagrados Titulares</h1>
+        <div class="noticia-meta">
+          <span class="noticia-fecha">18, 19 y 20 de Febrero de 2026</span>
+          <span class="noticia-categoria">Cultos</span>
+        </div>
       </div>
-      <div class="noticia-imagen">
-        <img src="/images/triduo.jpeg" alt="Solemne Triduo">
-      </div>
 
-      <div class="noticia-contenido">
-        <p>Nuestra Hermandad celebra y consagra el Solemne Triduo en honor a nuestros Sagrados Titulares, los días 18, 19 y 20 de Febrero a las 18:40 horas en la Parroquia de Santa Ángela y San Antonio Abad comenzando con el rezo del Santo Rosario, Ejercicio del Triduo y Santa Misa.</p>
-        
-        <p>La predicación estará a cargo del Rvdo. Sr. D. Marco Antonio Romero Temblador, director espiritual de la Hermandad y Párroco de Santa Ángela de la Cruz y San Antonio Abad.</p>
+      <div class="noticia-body">
+        <div class="noticia-contenido">
+          <p>Nuestra Hermandad celebra y consagra el Solemne Triduo en honor a nuestros Sagrados Titulares, los días 18, 19 y 20 de Febrero a las 18:40 horas en la Parroquia de Santa Ángela y San Antonio Abad comenzando con el rezo del Santo Rosario, Ejercicio del Triduo y Santa Misa.</p>
+          
+          <p>La predicación estará a cargo del Rvdo. Sr. D. Marco Antonio Romero Temblador, director espiritual de la Hermandad y Párroco de Santa Ángela de la Cruz y San Antonio Abad.</p>
 
-        <p>El día 21 de Febrero a las 19:00 horas, tendrá lugar la Función Principal de Instituto, presidida por el Rvdo. Sr. D. Marco Antonio Romero Temblador.</p>
+          <p>El día 21 de Febrero a las 19:00 horas, tendrá lugar la Función Principal de Instituto, presidida por el Rvdo. Sr. D. Marco Antonio Romero Temblador.</p>
 
-        <p>La parte musical estará a cargo de D. Justo Jiménez y Dña. Inmaculada Salmoral, piano y soprano.</p>
+          <p>La parte musical estará a cargo de D. Justo Jiménez y Dña. Inmaculada Salmoral, piano y soprano.</p>
 
-        <p class="recordatorio"><strong>Recordamos a los hermanos el deber de asistir a estos cultos de reglas y portar la medalla de la Hermandad durante la celebración de los mismos.</strong></p>
+          <p class="recordatorio"><strong>Recordamos a los hermanos el deber de asistir a estos cultos de reglas y portar la medalla de la Hermandad durante la celebración de los mismos.</strong></p>
+        </div>
+
+        <div class="noticia-imagen-destacada">
+          <img src="/images/triduo.jpeg" alt="Solemne Triduo">
+        </div>
       </div>
     </article>
   </main>
@@ -31,56 +37,82 @@ import Layout from '../../layouts/Layout.astro';
 
 <style>
   .noticia-detalle {
-    max-width: 800px;
+    max-width: 1100px;
     margin: 2rem auto;
-    padding: 0 1rem;
-  }
-
-  .noticia-header {
-    margin-bottom: 2rem;
+    padding: 0 1.5rem;
   }
 
   .back-link {
     display: inline-block;
-    color: #0066cc;
+    color: #8B0000;
     text-decoration: none;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s;
   }
 
   .back-link:hover {
-    color: #004499;
+    color: #5a0000;
   }
 
-  .noticia-fecha {
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .noticia-imagen {
-    max-width: 400px;
-    margin: 0 auto 2rem;
-  }
-
-  .noticia-imagen img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  .noticia-header {
+    margin-bottom: 2.5rem;
+    border-bottom: 3px solid #8B0000;
+    padding-bottom: 1.5rem;
   }
 
   h1 {
     font-family: 'Cinzel', serif;
-    font-size: 2.5rem;
-    color: #333;
+    font-size: 2.8rem;
+    color: #1a1a1a;
     margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .noticia-meta {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .noticia-fecha {
+    color: #666;
+  }
+
+  .noticia-categoria {
+    background: #8B0000;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .noticia-body {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+
+  .noticia-imagen-destacada {
+    flex: 0 0 420px;
+  }
+
+  .noticia-imagen-destacada img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   }
 
   .noticia-contenido {
-    line-height: 1.8;
-    color: #444;
-    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #333;
+    font-size: 1.1rem;
     text-align: justify;
   }
 
@@ -88,13 +120,31 @@ import Layout from '../../layouts/Layout.astro';
     margin-bottom: 1.5rem;
   }
 
+  .recordatorio {
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    background: #fdf5f5;
+    border-left: 4px solid #8B0000;
+    border-radius: 0 4px 4px 0;
+  }
+
   @media (max-width: 768px) {
     .noticia-detalle {
       padding: 0 1rem;
     }
 
+    .noticia-body {
+      flex-direction: column;
+    }
+
+    .noticia-imagen-destacada {
+      flex: none;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
     h1 {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
 
     .noticia-contenido {
@@ -109,7 +159,13 @@ import Layout from '../../layouts/Layout.astro';
     }
 
     h1 {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
+    }
+
+    .noticia-meta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
     }
 
     .noticia-contenido {

@@ -2,36 +2,35 @@
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="Cabildo General Extraordinario | Hermandad de Santa Ángela">
+<Layout title="Cartel Ego Sum Lux Mundi 2026 | Hermandad de Santa Ángela">
   <main class="noticia-detalle">
     <a href="/" class="back-link">← Volver al inicio</a>
     <article>
       <div class="noticia-header">
-        <h1>Cabildo General Extraordinario</h1>
+        <h1>Cartel Ego Sum Lux Mundi 2026</h1>
         <div class="noticia-meta">
-          <span class="noticia-fecha">20 de febrero de 2026</span>
+          <span class="noticia-fecha">8 de marzo de 2026</span>
           <span class="noticia-categoria">Noticias</span>
         </div>
       </div>
 
       <div class="noticia-body">
         <div class="noticia-contenido">
-          <p>La Hermandad Sacramental y Cofradía de Nazarenos del Santísimo Cristo del Amor y Humildad ante Caifás, María Santísima de la Salud y Esperanza, Santa Ángela de la Cruz y San Antonio Abad, por orden del Presidente tras acuerdo en Cabildo de Oficiales, y en cumplimiento de nuestras reglas, convoca a todos los hermanos mayores de 18 años de edad y con más de un año de antigüedad a Cabildo General Extraordinario.</p>
-          
-          <p>Dicho Cabildo se celebrará, Dios mediante, el próximo viernes 20 de febrero en los salones parroquiales de Santa Ángela de la Cruz y San Antonio Abad, a las 20:30 horas en primera convocatoria y a las 21:00 horas en segunda y última convocatoria con el siguiente orden del día:</p>
+          <p>Con inmenso gozo, presentamos el Cartel "Ego Sum Lux Mundi 2026", una obra que se convierte desde hoy en anuncio y símbolo del tiempo que estamos llamados a vivir con fe, devoción y esperanza.</p>
 
-          <ol>
-            <li>Preces.</li>
-            <li>Propuesta y aprobación, si procede, de la integración en la nómina de Hermandades y Cofradías de la Semana Santa de Sanlúcar de Barrameda para realizar la Estación de Penitencia a la Parroquia Mayor de Nuestra Señora de la O en la jornada del Miércoles Santo a partir del año del Señor de 2027.</li>
-            <li>Propuesta y aprobación, si procede, del hábito penitencial de los hermanos nazarenos y de la indumentaria de los monaguillos, conforme al carácter y espíritu de nuestra corporación.</li>
-            <li>Oración final.</li>
-          </ol>
+          <p>Desde estas líneas queremos trasladar nuestro más sincero agradecimiento a D. Joaquín Jiménez Álvarez por su dedicación, su talento y su generosidad al ofrecer a nuestra Hermandad una obra que, desde este momento, pasa a formar parte de nuestro patrimonio artístico y devocional.</p>
 
-          <p class="despedida">Sin otro particular, reciba un abrazo en Jesucristo Nuestro Señor</p>
+          <p>Que este cartel sea luz que anuncie y prepare el camino hacia los días que viviremos juntos, siempre bajo la guía de Aquel que es la verdadera luz del mundo.</p>
+
+          <p class="hashtags">
+            #HermandaddeSantaÁngela<br>
+            #AmoryHumildad<br>
+            #LaDehesilla
+          </p>
         </div>
 
         <div class="noticia-imagen-destacada">
-          <img src="/images/CabildoGeneral.jpeg" alt="Cabildo General Extraordinario">
+          <img src="/images/cartel.jpeg" alt="Cartel Ego Sum Lux Mundi 2026">
         </div>
       </div>
     </article>
@@ -95,12 +94,6 @@ import Layout from '../../layouts/Layout.astro';
     letter-spacing: 0.05em;
   }
 
-  .noticia-body {
-    display: flex;
-    gap: 3rem;
-    align-items: flex-start;
-  }
-
   .noticia-imagen-destacada {
     flex: 0 0 420px;
   }
@@ -110,6 +103,12 @@ import Layout from '../../layouts/Layout.astro';
     height: auto;
     border-radius: 4px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .noticia-body {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
   }
 
   .noticia-contenido {
@@ -123,19 +122,13 @@ import Layout from '../../layouts/Layout.astro';
     margin-bottom: 1.5rem;
   }
 
-  .noticia-contenido ul, .noticia-contenido ol {
-    margin: 1.5rem 0 1.5rem 2rem;
+  .hashtags {
+    color: #8B0000;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 2rem;
     line-height: 2;
-  }
-
-  .noticia-contenido li {
-    margin-bottom: 0.8rem;
-  }
-
-  .despedida {
-    font-style: italic;
-    margin-top: 2.5rem;
-    text-align: center;
   }
 
   @media (max-width: 768px) {
@@ -159,10 +152,6 @@ import Layout from '../../layouts/Layout.astro';
 
     .noticia-contenido {
       font-size: 1rem;
-    }
-
-    .noticia-contenido ul, .noticia-contenido ol {
-      margin-left: 1rem;
     }
   }
 

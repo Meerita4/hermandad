@@ -7,56 +7,60 @@ import Layout from '../../layouts/Layout.astro';
     <a href="/" class="back-link">← Volver al inicio</a>
     <article>
       <div class="noticia-header">
-        <div class="noticia-fecha">23 de noviembre de 2025</div>
         <h1>Elevación a Hermandad de Penitencia</h1>
+        <div class="noticia-meta">
+          <span class="noticia-fecha">23 de noviembre de 2025</span>
+          <span class="noticia-categoria">Noticias</span>
+        </div>
       </div>
 
-      <div class="noticia-contenido">
-        <p class="introduccion">
-          La Junta de Gobierno tiene el honor de presentar ante todos los hermanos y devotos el 
-          <strong>Decreto de Erección Canónica</strong> mediante el cual nuestra Hermandad ha sido 
-          constituida oficialmente como entidad canónica en el seno de la Santa Madre Iglesia.
-        </p>
+      <div class="noticia-body">
+        <div class="noticia-contenido">
+          <p class="introduccion">
+            La Junta de Gobierno tiene el honor de presentar ante todos los hermanos y devotos el 
+            <strong>Decreto de Erección Canónica</strong> mediante el cual nuestra Hermandad ha sido 
+            constituida oficialmente como entidad canónica en el seno de la Santa Madre Iglesia.
+          </p>
+          
+          <h2>Significado del Decreto</h2>
+          <p>
+            El Decreto de Erección Canónica constituye el acto jurídico por el cual la autoridad eclesiástica 
+            competente reconoce y aprueba la constitución de nuestra Hermandad, otorgándole personalidad 
+            jurídica canónica y permitiendo su plena actividad dentro de la Iglesia Católica.
+          </p>
 
-        <div class="decreto-container">
-          <img src="/images/decreto.jpeg" alt="Decreto de Erección Canónica" class="imagen-principal" />
-          <p class="pie-imagen">Decreto oficial de erección canónica de la Hermandad</p>
+          <h2>Contenido del Documento</h2>
+          <p>Este histórico documento contiene:</p>
+          
+          <ul>
+            <li><strong>Aprobación eclesiástica:</strong> Reconocimiento oficial por parte de la autoridad diocesana</li>
+            <li><strong>Denominación canónica:</strong> Nombre completo y oficial de la Hermandad</li>
+            <li><strong>Sede canónica:</strong> Templo donde la Hermandad tiene establecida su sede</li>
+            <li><strong>Fines y objetivos:</strong> Propósitos religiosos, culturales y sociales de la corporación</li>
+            <li><strong>Estatutos aprobados:</strong> Normas que rigen la vida y organización de la Hermandad</li>
+          </ul>
+
+          <h2>Importancia para la Hermandad</h2>
+          <p>
+            Este decreto representa un hito fundamental en la historia de nuestra corporación, pues mediante 
+            él quedamos plenamente integrados en la estructura pastoral de la Diócesis, pudiendo desarrollar 
+            nuestra labor evangelizadora, cultual y caritativa con el respaldo y bendición de la Santa Iglesia.
+          </p>
+
+          <p class="conclusion">
+            Damos gracias a Dios Nuestro Señor y a Nuestros Sagrados Titulares por este don recibido, 
+            comprometiéndonos a vivir con fidelidad el espíritu cristiano y las normas que nos rigen.
+          </p>
+
+          <p class="firma">
+            <strong>La Junta de Gobierno</strong><br>
+            Hermandad de Santa Ángela de la Cruz
+          </p>
         </div>
-        
-        <h2>Significado del Decreto</h2>
-        <p>
-          El Decreto de Erección Canónica constituye el acto jurídico por el cual la autoridad eclesiástica 
-          competente reconoce y aprueba la constitución de nuestra Hermandad, otorgándole personalidad 
-          jurídica canónica y permitiendo su plena actividad dentro de la Iglesia Católica.
-        </p>
 
-        <h2>Contenido del Documento</h2>
-        <p>Este histórico documento contiene:</p>
-        
-        <ul>
-          <li><strong>Aprobación eclesiástica:</strong> Reconocimiento oficial por parte de la autoridad diocesana</li>
-          <li><strong>Denominación canónica:</strong> Nombre completo y oficial de la Hermandad</li>
-          <li><strong>Sede canónica:</strong> Templo donde la Hermandad tiene establecida su sede</li>
-          <li><strong>Fines y objetivos:</strong> Propósitos religiosos, culturales y sociales de la corporación</li>
-          <li><strong>Estatutos aprobados:</strong> Normas que rigen la vida y organización de la Hermandad</li>
-        </ul>
-
-        <h2>Importancia para la Hermandad</h2>
-        <p>
-          Este decreto representa un hito fundamental en la historia de nuestra corporación, pues mediante 
-          él quedamos plenamente integrados en la estructura pastoral de la Diócesis, pudiendo desarrollar 
-          nuestra labor evangelizadora, cultual y caritativa con el respaldo y bendición de la Santa Iglesia.
-        </p>
-
-        <p class="conclusion">
-          Damos gracias a Dios Nuestro Señor y a Nuestros Sagrados Titulares por este don recibido, 
-          comprometiéndonos a vivir con fidelidad el espíritu cristiano y las normas que nos rigen.
-        </p>
-
-        <p class="firma">
-          <strong>La Junta de Gobierno</strong><br>
-          Hermandad de Santa Ángela de la Cruz
-        </p>
+        <div class="noticia-imagen-destacada">
+          <img src="/images/decreto.jpeg" alt="Decreto de Erección Canónica">
+        </div>
       </div>
     </article>
   </main>
@@ -64,55 +68,105 @@ import Layout from '../../layouts/Layout.astro';
 
 <style>
   .noticia-detalle {
-    max-width: 800px;
+    max-width: 1100px;
     margin: 2rem auto;
-    padding: 0 1rem;
-  }
-
-  .noticia-header {
-    margin-bottom: 2rem;
+    padding: 0 1.5rem;
   }
 
   .back-link {
     display: inline-block;
-    color: #0066cc;
+    color: #8B0000;
     text-decoration: none;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s;
   }
 
   .back-link:hover {
-    color: #004499;
+    color: #5a0000;
   }
 
-  .noticia-fecha {
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
+  .noticia-header {
+    margin-bottom: 2.5rem;
+    border-bottom: 3px solid #8B0000;
+    padding-bottom: 1.5rem;
   }
 
   h1 {
     font-family: 'Cinzel', serif;
-    font-size: 2.5rem;
-    color: #333;
+    font-size: 2.8rem;
+    color: #1a1a1a;
     margin-bottom: 1rem;
-    text-align: center;
+    line-height: 1.2;
+  }
+
+  .noticia-meta {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .noticia-fecha {
+    color: #666;
+  }
+
+  .noticia-categoria {
+    background: #8B0000;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .noticia-body {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+
+  .noticia-imagen-destacada {
+    flex: 0 0 420px;
+  }
+
+  .noticia-imagen-destacada img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .noticia-contenido {
+    line-height: 1.9;
+    color: #333;
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+
+  .noticia-contenido p {
+    margin-bottom: 1.5rem;
+  }
+
+  .noticia-contenido ul, .noticia-contenido ol {
+    margin: 1.5rem 0 1.5rem 2rem;
+    line-height: 2;
+  }
+
+  .noticia-contenido li {
+    margin-bottom: 0.8rem;
   }
 
   h2 {
     font-family: 'Cinzel', serif;
     font-size: 1.8rem;
     color: #333;
-    margin: 2.5rem 0 1rem;
+    margin: 2rem 0 1rem;
     border-bottom: 2px solid #8B0000;
     padding-bottom: 0.5rem;
-  }
-
-  .noticia-contenido {
-    line-height: 1.8;
-    color: #444;
-    font-size: 1.05rem;
-    text-align: justify;
   }
 
   .introduccion {
@@ -121,40 +175,7 @@ import Layout from '../../layouts/Layout.astro';
     background-color: #f9f9f9;
     padding: 1.5rem;
     border-left: 4px solid #8B0000;
-    margin: 2rem 0;
-  }
-
-  .decreto-container {
-    margin: 3rem 0;
-    text-align: center;
-  }
-
-  .imagen-principal {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    border: 1px solid #ddd;
-  }
-
-  .pie-imagen {
-    font-size: 0.9rem;
-    color: #666;
-    font-style: italic;
-    margin-top: 1rem;
-  }
-
-  .noticia-contenido p {
-    margin-bottom: 1.5rem;
-  }
-
-  .noticia-contenido ul {
-    margin: 1.5rem 0 2rem 2rem;
-    line-height: 2;
-  }
-
-  .noticia-contenido li {
-    margin-bottom: 0.8rem;
+    margin: 0 0 2rem;
   }
 
   .conclusion {
@@ -162,7 +183,6 @@ import Layout from '../../layouts/Layout.astro';
     background-color: #f9f9f9;
     padding: 1.5rem;
     border-left: 4px solid #8B0000;
-    margin-top: 3rem;
     text-align: center;
   }
 
@@ -175,8 +195,22 @@ import Layout from '../../layouts/Layout.astro';
   }
 
   @media (max-width: 768px) {
+    .noticia-detalle {
+      padding: 0 1rem;
+    }
+
+    .noticia-body {
+      flex-direction: column;
+    }
+
+    .noticia-imagen-destacada {
+      flex: none;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
     h1 {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
 
     h2 {
@@ -187,12 +221,7 @@ import Layout from '../../layouts/Layout.astro';
       font-size: 1rem;
     }
 
-    .introduccion {
-      font-size: 1rem;
-      padding: 1rem;
-    }
-
-    .noticia-contenido ul {
+    .noticia-contenido ul, .noticia-contenido ol {
       margin-left: 1rem;
     }
   }
@@ -204,20 +233,17 @@ import Layout from '../../layouts/Layout.astro';
     }
 
     h1 {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
     }
 
-    h2 {
-      font-size: 1.2rem;
-      margin: 1.5rem 0 0.75rem;
+    .noticia-meta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
     }
 
     .noticia-contenido {
       font-size: 0.95rem;
-    }
-
-    .conclusion {
-      padding: 1rem;
     }
   }
 </style>

@@ -39,23 +39,47 @@ import Layout from '../layouts/Layout.astro';
     <section class="noticias-section">
       <h2>Últimas Noticias de la Hermandad</h2>
       <div class="noticias-grid">
+        <a href="/noticias/cartel-ego-sum-lux-mundi" class="noticia-card-link">
+          <article class="noticia-card">
+            <div class="noticia-imagen">
+              <img src="src/images/cartel.jpeg" alt="Cartel Ego Sum Lux Mundi 2026" style="object-position: center 5%;">
+            </div>
+            <div class="noticia-fecha">8 de marzo de 2026</div>
+            <h3>Cartel Ego Sum Lux Mundi 2026</h3>
+            <p>Presentamos el cartel «Ego Sum Lux Mundi» que anunciará los cultos y la Estación de Penitencia del presente año 2026.</p>
+          </article>
+        </a>
+
+        <a href="/noticias/papeletas-de-sitio" class="noticia-card-link">
+          <article class="noticia-card">
+            <div class="noticia-imagen">
+              <img src="src/images/papeletas.jpeg" alt="Reparto de Papeletas de Sitio">
+            </div>
+            <div class="noticia-fecha">9 de marzo de 2026</div>
+            <h3>Reparto de Papeletas de Sitio</h3>
+            <p>Comienza el reparto de papeletas de sitio para la Estación de Penitencia. Infórmate de los requisitos y horarios.</p>
+          </article>
+        </a>
+
         <a href="/noticias/decreto-hermandad" class="noticia-card-link">
           <article class="noticia-card">
             <div class="noticia-imagen">
               <img src="/images/decreto.jpeg" alt="Decreto">
             </div>
-            <div class="noticia-fecha">23 Noviembre 2025</div>
+            <div class="noticia-fecha">23 de noviembre de 2025</div>
             <h3>Decreto de Hermandad</h3>
             <p>Descripción breve de la noticia. Aquí puedes añadir información sobre los eventos, anuncios o novedades de la hermandad.</p>
           </article>
         </a>
+      </div>
 
+      <div class="noticias-grid noticias-grid-centered">
         <a href="/noticias/noticia-ejemplo-1" class="noticia-card-link">
           <article class="noticia-card">
             <div class="noticia-imagen">
               <img src="/images/CabildoGeneral.jpeg" alt="Cabildo General Extraordinario">
             </div>
-            <div class="noticia-fecha">20 Febrero 2026</div>
+            <div class="noticia-fecha">20 de febrero de 2026</div>
             <h3>Cabildo General Extraordinario</h3>
             <p>Contenido de ejemplo para otra noticia. Puedes duplicar estas tarjetas para añadir más noticias.</p>
           </article>
@@ -66,7 +90,7 @@ import Layout from '../layouts/Layout.astro';
             <div class="noticia-imagen">
               <img src="/images/triduo.jpeg" alt="Solemne Triduo">
             </div>
-            <div class="noticia-fecha">18, 19 y 20 Febrero 2026</div>
+            <div class="noticia-fecha">18, 19 y 20 de febrero de 2026</div>
             <h3>Solemne Triduo</h3>
             <p>Solemne Triduo en honor a nuestros Sagrados Titulares en la Parroquia de Santa Ángela y San Antonio Abad.</p>
           </article>
@@ -157,6 +181,12 @@ import Layout from '../layouts/Layout.astro';
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+  }
+
+  .noticias-grid-centered {
+    max-width: 700px;
+    margin: 2rem auto 0;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .noticia-card-link {
