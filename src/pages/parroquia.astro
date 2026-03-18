@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Parroquia | Hermandad de Santa Ángela" description="Información sobre la Parroquia de la Hermandad de Santa Ángela de la Cruz.">
+  <main class="parroquia-main">
+    <h1>Parroquia de Santa Ángela de la Cruz y San Antonio Abad</h1>
+    <div class="parroquia-img">
+      <img src="src/images/parroquia.jpg" alt="Imagen de la Parroquia de Santa Ángela de la Cruz y San Antonio Abad" />
+    </div>
+    <p>La Parroquia de Santa Ángela de la Cruz y San Antonio Abad se alza en la ciudad de Sanlúcar de Barrameda como un lugar de encuentro, fe y comunidad para todos los fieles que forman parte de esta zona de la ciudad. Más que un edificio, la parroquia es un hogar espiritual donde generaciones de sanluqueños han encontrado acogida, acompañamiento y vida cristiana.</p>
+    <p>La parroquia toma su nombre de dos grandes referentes de la espiritualidad cristiana. Por un lado, Santa Ángela de la Cruz, fundadora de la Compañía de la Cruz, ejemplo de humildad, servicio y amor a los más pobres; y por otro, San Antonio Abad, uno de los grandes padres del monacato cristiano, modelo de vida austera, oración y entrega a Dios. Ambos santos inspiran la misión pastoral de esta comunidad parroquial.</p>
+    <p>Arquitectónicamente, el templo presenta un estilo sencillo y funcional, propio de las parroquias surgidas en los barrios en expansión durante la segunda mitad del siglo XX. Su estructura está pensada para favorecer la cercanía entre los fieles y el altar, centro de la vida litúrgica. En su interior destacan el presbiterio, donde se celebra la Eucaristía, las imágenes devocionales que acompañan la oración del pueblo y los distintos espacios destinados a la catequesis, la acción pastoral y la vida comunitaria.</p>
+    <p>Desde su fundación, la parroquia ha sido un motor de vida cristiana y social en el barrio. A través de la celebración de los sacramentos, la formación catequética de niños, jóvenes y adultos, la acción caritativa y la actividad de grupos parroquiales y hermandades, se construye día a día una comunidad viva y comprometida.</p>
+    <p>La Parroquia de Santa Ángela de la Cruz y San Antonio Abad no es solo un lugar de culto, sino también un espacio de convivencia, solidaridad y evangelización. En ella se comparten momentos de fe, celebración y servicio, manteniendo viva la tradición cristiana de Sanlúcar de Barrameda y transmitiéndola a las nuevas generaciones.</p>
+    <h2>Horarios de Misa</h2>
+    <div class="horarios">
+      <div>
+        <strong>Horario de Invierno</strong>
+        <ul>
+          <li>Martes, jueves y sábado: 19:00 h</li>
+          <li>Domingos: 11:00 h</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Horario de Verano</strong>
+        <ul>
+          <li>Sábados: 20:00 h</li>
+          <li>Domingos: 11:00 h</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .parroquia-main {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  }
+  .parroquia-main h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    color: #800020;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .parroquia-main p {
+    font-size: 1.08rem;
+    line-height: 1.85;
+    color: #444;
+    margin-bottom: 1.3rem;
+    text-align: justify;
+    font-family: inherit;
+  }
+  .parroquia-main h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.4rem;
+    color: #800020;
+    margin-top: 2.5rem;
+    margin-bottom: 1.2rem;
+    text-align: left;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .horarios {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  .horarios div {
+    background: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    padding: 1.2rem 1.5rem;
+    min-width: 220px;
+    flex: 1 1 220px;
+  }
+  .horarios strong {
+    color: #800020;
+    font-size: 1.08rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: 'Cinzel', serif;
+  }
+  .horarios ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    font-size: 1.05rem;
+    color: #444;
+  }
+  .horarios li {
+    margin-bottom: 0.3rem;
+  }
+  .parroquia-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.2rem;
+  }
+  .parroquia-img img {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16/6;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+    background: #eaeaea;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+</style>

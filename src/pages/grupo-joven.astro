@@ -1,0 +1,90 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Grupo Joven | Hermandad de Santa Ángela" description="Información sobre el Grupo Joven de la Hermandad de Santa Ángela de la Cruz.">
+  <main class="grupo-joven-main">
+    <h1>Grupo Joven</h1>
+    <div class="grupo-joven-fotos">
+      <!-- Foto 1: Sustituye 'foto1.jpg' por el nombre real de la imagen -->
+      <div class="foto-hueco">
+        <img src="src/images/gjSanta.jpg" alt="Grupo Joven Hermandad - Foto 1" />
+      </div>
+      <!-- Foto 2: Sustituye 'foto2.jpg' por el nombre real de la imagen -->
+      <div class="foto-hueco">
+        <img src="src/images/grupoJoven.jpg" alt="Grupo Joven Hermandad - Foto 2" />
+      </div>
+    </div>
+    <section class="grupo-joven-texto">
+      <p>El <strong>Grupo Joven</strong> de la Hermandad de Santa Ángela es hoy en día un espacio vivo, dinámico y lleno de ilusión dentro de nuestra corporación. Se caracteriza por su constante actividad y por la estrecha unión que mantiene tanto con la hermandad como con nuestra parroquia, siendo un verdadero pilar para el presente y el futuro de ambas.</p>
+      <p>Se trata de un punto de encuentro para jóvenes que desean vivir su fe de una manera cercana y comprometida, a través de la hermandad. En él, encuentran un lugar donde compartir inquietudes, crecer personalmente y hacer madurar su vida, tanto en el ámbito cristiano como en el cofrade.</p>
+      <p>A lo largo del año, el grupo joven desarrolla numerosas iniciativas, reuniéndose con frecuencia para organizar convivencias entre sus miembros, así como encuentros con distintos grupos jóvenes de Sanlúcar, fortaleciendo así los lazos de fraternidad y comunidad.</p>
+      <p>Entre sus principales actos destacan la salida procesional de Santa Ángela de la Cruz por las calles de nuestra barriada de la Dehesilla, un momento muy esperado y emotivo para todos, así como el pregón de la juventud cofrade sanluqueña, que se ha consolidado como una cita imprescindible dentro de la Cuaresma en nuestra ciudad.</p>
+      <p>Desde aquí animamos a todos aquellos jóvenes que quieran formar parte de esta gran familia a que den el paso y se unan. Pueden hacerlo poniéndose en contacto a través de nuestras redes sociales o acercándose a preguntar en nuestra parroquia o en la casa de hermandad. <strong>¡Os esperamos con los brazos abiertos!</strong></p>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .grupo-joven-main {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  }
+  .grupo-joven-main h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    color: #800020;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .grupo-joven-fotos {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+  }
+  .foto-hueco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    padding: 1rem;
+    width: 320px;
+    min-height: 340px;
+  }
+  .foto-hueco img {
+    width: 290px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.7rem;
+    background: #eaeaea;
+  }
+  .foto-caption {
+    font-size: 0.97rem;
+    color: #666;
+    text-align: center;
+    margin-top: 0.2rem;
+    font-style: italic;
+  }
+  .grupo-joven-texto {
+    margin-top: 1.5rem;
+  }
+  .grupo-joven-texto p {
+    font-size: 1.08rem;
+    line-height: 1.85;
+    color: #444;
+    margin-bottom: 1.3rem;
+    text-align: justify;
+    font-family: inherit;
+  }
+</style>
