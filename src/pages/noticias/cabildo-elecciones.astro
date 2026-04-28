@@ -1,0 +1,187 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Cabildo General Extraordinario de Elecciones | Hermandad de Santa Ángela">
+  <main class="noticia-detalle">
+    <a href="/" class="back-link">← Volver al inicio</a>
+    <article>
+      <div class="noticia-header">
+        <h1>Cabildo General Extraordinario de Elecciones</h1>
+        <div class="noticia-meta">
+          <span class="noticia-fecha">29 de mayo de 2026</span>
+          <span class="noticia-categoria">Noticias</span>
+        </div>
+      </div>
+
+      <div class="noticia-body">
+        <div class="noticia-contenido">
+          <p>La Hermandad de Santa Ángela convoca a todos sus hermanos al <strong>Cabildo General Extraordinario de Elecciones</strong>, que tendrá lugar el próximo viernes <strong>29 de mayo de 2026</strong>, en horario de <strong>18:00 a 22:00 horas</strong>, en la Casa de Hermandad, sita en Av. Paseo Jardín Botánico nº 67.</p>
+
+          <p>En cumplimiento de lo dispuesto en nuestras Reglas y Estatutos, se recuerda la <strong>obligatoriedad de asistencia</strong> de todos los hermanos con derecho a voto, entendiéndose por estos aquellos que sean mayores de 18 años y cuenten con al menos un año de antigüedad en la Hermandad, a fin de participar activamente en este acto de especial relevancia para la vida de nuestra Corporación.</p>
+
+          <h3>Candidatura presentada</h3>
+          <p>Se informa que la única candidatura presentada a Hermano Mayor es la de <strong>N.H.D. Jaime Buzón Ibáñez</strong>.</p>
+
+          <h3>Voto por correo</h3>
+          <p>Aquellos hermanos que, por causa justificada, no puedan asistir, podrán ejercer su derecho al voto por correo conforme a lo establecido en la normativa vigente.</p>
+
+          <p class="hashtags">#HermandaddeSantaÁngela<br>#LaDehesilla<br>#AmoryHumildad</p>
+        </div>
+
+        <div class="noticia-imagen-destacada">
+          <img src="/images/elecciones.jpeg" alt="Cartel Cabildo General Extraordinario de Elecciones">
+        </div>
+      </div>
+    </article>
+  </main>
+</Layout>
+
+<style>
+  .noticia-detalle {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+  }
+
+  .back-link {
+    display: inline-block;
+    color: #8B0000;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+  }
+
+  .back-link:hover {
+    color: #5a0000;
+  }
+
+  .noticia-header {
+    margin-bottom: 2.5rem;
+    border-bottom: 3px solid #8B0000;
+    padding-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.8rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .noticia-meta {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .noticia-fecha {
+    color: #666;
+  }
+
+  .noticia-categoria {
+    background: #8B0000;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .noticia-body {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+
+  .noticia-imagen-destacada {
+    flex: 0 0 500px;
+  }
+
+  .noticia-imagen-destacada img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .noticia-contenido {
+    line-height: 1.9;
+    color: #333;
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+
+  .noticia-contenido p {
+    margin-bottom: 1.5rem;
+  }
+
+  .noticia-contenido ul, .noticia-contenido ol {
+    margin: 1.5rem 0 1.5rem 2rem;
+    line-height: 2;
+  }
+
+  .noticia-contenido li {
+    margin-bottom: 0.8rem;
+  }
+
+  h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    color: #8B0000;
+    margin: 2rem 0 0.3rem;
+  }
+
+  .hashtags {
+    margin-top: 2rem;
+    color: #8B0000;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 2;
+  }
+
+  @media (max-width: 768px) {
+    .noticia-detalle {
+      padding: 0 1rem;
+    }
+
+    .noticia-body {
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .noticia-contenido {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .noticia-detalle {
+      padding: 0 0.75rem;
+      margin: 1rem auto;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    .noticia-meta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .noticia-contenido {
+      font-size: 0.95rem;
+    }
+  }
+</style>
